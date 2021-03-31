@@ -172,11 +172,17 @@ Use the filterByWord function below to do the following:
 
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
-
-function filterByWord(/*your code here*/){
-    /*your code here*/
+var promo = 'Chocolate';
+function filterByWord(list, string){
+    let newFlavors = [];
+    for (let i = 0; i < list.length; i++) {
+        if (list[i].includes(string)) {
+            newFlavors.push(list[i]);
+        }
+    }
+    return newFlavors
 }
-
+filterByWord(originalFlavors, promo);
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
