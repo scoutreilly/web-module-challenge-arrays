@@ -141,11 +141,16 @@ Use the removeFlavorByName function below to do the following:
 
     HINT: You can use .splice() for this
 */
-
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+let noMore = 'Vanilla';
+function removeFlavorByName(list, name){
+    for(let i = 0; i < list.length; i++){
+        if (list[i] === noMore) {
+            list.splice(i, 1);
+            return list
+        }
+    }
 }
-
+removeFlavorByName(originalFlavors, noMore);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
